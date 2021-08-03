@@ -34,7 +34,7 @@ if [ ! -z $2 ]; then
 	num_connections=$2		
 fi
 
-echo "downloading $1 with $num_connections connections "
+#echo "downloading $1 with $num_connections connections "
 #axel -n "$num_connections" -U "$user_agent" -vvv "$1"
 axel -n "$num_connections" -U "$user_agent" --no-clobber --alternate "$1"
 
