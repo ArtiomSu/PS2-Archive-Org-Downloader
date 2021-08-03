@@ -9,7 +9,7 @@ echo -e "$colour_LightBlue"
 while read p; do
 	(( counter++ ))
 	echo -en "${counter}.\t"
-	echo "$p" | cut -d '/' -f6 | sed 's/%20/ /g' | sed "s/%27/'/g" | sed 's/%28/(/g' | sed 's/%29/)/g' | sed 's/%2C/,/g' | sed 's/%26/\&/g'
+	echo "$p" | cut -d '/' -f6 | sed 's/%20/ /g' | sed "s/%27/'/g" | sed 's/%28/(/g' | sed 's/%29/)/g' | sed 's/%2C/,/g' | sed 's/%26/\&/g' | sed 's/%21/!/g' | sed 's/%23/#/g'
 done <download_urls.txt
 echo -e "$colour_NC"
 
