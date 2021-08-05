@@ -19,5 +19,8 @@ Run `./autorun.sh` for an interactive session. Ok for first time use but I recom
 # Config
 You can edit `download.sh` to your liking as it is just a wrapper for axel. As is axel will use a random user agent each time it downloads, it will use 6 connections per download by default as I had issues with 10 on archive.org. It will also skip already downloaded files so you can safely rerun the script without it downloading everything again. And it will use an alternative graph so that it doesnt spam the display like the default one.
 
+# Convert 7z to gz
+Convert 7z to gz for emulators. you can run the script `convert_all_zips.sh` to convert all downloaded 7z into gz. The script will create empty 7z files in place of the originals so that you dont waste disk space and so that the download all script skips them.
+
 # Video Guide
 [![Preparing for the Steam Deck Part 1: Downloading PS2 Games with Bash](https://img.youtube.com/vi/XueDdehTIiY/0.jpg)](https://www.youtube.com/watch?v=XueDdehTIiY)
